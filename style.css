@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+   padding: 0; 
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Birthstone', cursive;
+    background: #c10000;
+}
+header #pesquisa, header #filtro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    width: 190px;
+    margin:5px;
+}
+
+header #filtro img{
+    margin: 0;
+    width: 24px;
+
+}
+header  #filtro{
+    border: solid 2px #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 150%;
+    width: 120px;
+    height: 40px;
+    transition: 0.5s;
+}
+header  #filtro:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+}
+header #pesquisa {
+    width: 68%;
+    font-size: 25px;
+    color: white;
+}
+header #pesquisa input{
+    width: 50%;
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 0 10px;
+    font-size: 15px;
+
+    background-image: url(aceds/outline_search_black_24dp.png);
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: center;
+
+}
+
+
+header #pesquisa p{
+    margin: 0 10px 0 0%;
+    color: black;
+}
+main{
+    margin: auto;
+    margin-top: 15px;
+    width: 90%;
+}
+main #banner h3, main #cardapio{
+    font-family: 'Birthstone', cursive;
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #c10000;
+}
+
+main #banner img{
+    width: 100%;
+    height: 400px;
+    filter: brightness(70%);
+}
+
+main #banner #promocao{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 85%;
+    margin: auto;
+
+    z-index: 2;
+    margin-top: -100px;
+    filter: brightness(100%);
+    margin-bottom: 60px;
+}
+
+main #banner #promocao h3{
+    widows: 250px;
+    color: white;
+}
+
+main #banner #promocao button{
+    widows: 120px;
+    height: 40px;
+    border: 0;
+    border-radius: 2px;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: 700px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main #banner #promocao button:hover{
+background-color: #c10000;
+}
+
+main #cardapio #itens .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: solid 2px black;
+    border-radius: 4px;
+    width: 45%;
+    height: 130px;
+
+    margin-bottom: 10px;
+}
+
+main #cardapio #itens .card img{
+    width: 25%;
+    height: 101%;
+}
+
+main #cardapio #itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #cardapio #itens .card descricao{
+    margin: 0 15px;
+}
+
+main #cardapio #itens .card descricao h3{
+    margin: 10px 0;
+    font-family: 'Birthstone', cursive;
+    color: black;
+}
+
+main #cardapio #itens .card .qtd-valor{
+    margin-right: 15px;
+}
+    main #cardapio #itens .card .qtd-valor .valor{
+        font-family: 'Birthstone', cursive;
+        font-size: 22px;
+        font-weight: 700;
+        color: #13ac39;
+        text-align: center;
+
+    }
+
+main #cardapio #itens .card .qtd-valor .qtd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Birthstone', cursive;
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+main #cardapio #itens .card .qtd-valor .qtd p{
+    background-color: #c10000;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    
+    width: 30px;
+    cursor: pointer;
+}
+
+main #cardapio #itens .card .qtd-valor .qtd .sub{
+    border-radius: 5px 0 0 5px;
+}
+
+main #cardapio #itens .card .qtd-valor .qtd .add{
+    border-radius: 0 5px 5px 0;
+}
+main #cardapio #itens .card .qtd-valor .qtd .sub:hover,main #cardapio #itens .card .qtd-valor .qtd .add:hover{
+    background-color: rgb(0, 0, 0);
+    transition: 00.5s;
+}
+
+main #cardapio #itens .card .qtd-valor .qtd .quantia{
+    background-color: white;
+    color: black;
+    cursor: default;
+    }
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #6b0303;
+}
+footer img{
+    width: 150px;
+}
+footer #pedido img{
+    width: 40px;
+}
+footer#logo, footer #links{
+    width: 25px;
+    text-align: center;
+}
+footer #logo img{
+    width: 200px;   
+    cursor: pointer;
+}
+footer #pedido{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-family: 'Birthstone', cursive;
+    font-size: 20px;
+}
+footer #pedido h3, footer #pedido p{
+    padding: 3px 0;
+}
+footer #pedido button{
+    border: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(66, 212, 29);
+
+    margin: 5px 0;
+
+    transition: 00.5s;
+    cursor: pointer;
+}
+footer #pedido #pedir{
+    background: black;
+}
+footer #pedido #cadastrar{
+    color: rgb(66, 212, 29);
+    background-color: black;
+}
+footer #pedido #cadastrar:hover{
+    background-color: rgb(5, 43, 0);
+}
+footer #pedido input{
+    width: 350px;
+    height: 40px;
+    
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+   
+    padding-left: 10px;
+    
+    color: black;
+
+    background-image: url(aceds/email.png);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+    background-size: 25px;
+}
+footer #links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer #links img {
+        width: 40px;
+        padding-top: 5px;
+
+        cursor: pointer;
+    }
+
